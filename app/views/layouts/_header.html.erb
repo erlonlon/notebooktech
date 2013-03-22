@@ -2,7 +2,7 @@
     <header id="header" class="5grid-layout">
       <div class="row">
         <div class="12u" id="logo"> <!-- Logo -->
-          <a href="#" class="mobileUI-site-name"><%= image_tag "logonotebooktech_700_200.png", :size => "300x85" %></a>
+          <%= link_to root_path ,:class => "mobileUI-site-name" do %><%= image_tag "logonotebooktech_700_200.png", :size => "300x85" %><% end %>
             <div id="logosocial"> <!-- Logo -->
                <%= image_tag "linkedin2.png" %>
           <a href="#"><%= image_tag "facebook.png" %></a>
@@ -18,12 +18,13 @@
         <div class="12u" id="menu">
           <nav class="mobileUI-site-nav">
             <ul>
-              <li class="current_page_item"><a href="index.html">Home</a></li>
-              <li><a href="threecolumn.html">A Empresa</a></li>
-              <li><a href="twocolumn1.html">Blog</a></li>
-                <li><a href="twocolumn1.html">Contatos</a></li>
-              <li><a href="twocolumn2.html">Localização</a></li>
-              <li><a href="onecolumn.html">Serviços</a></li>
+              <li class="current_page_item"><%= link_to root_path do %>
+                Home<% end %></li>
+              <li><%= link_to root_path do %>A Empresa<% end %></li>
+              <li><%= link_to root_path do %>Blog<% end %></li>
+               <li><%= link_to root_path do %>Contatos<% end %></li>
+             <li><%= link_to root_path do %>Localização<% end %></li>
+             <li><%= link_to root_path do %>Serviços<% end %></li>
 
             </ul>
           </nav>

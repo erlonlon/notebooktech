@@ -1,0 +1,199 @@
+/*
+	Elemental: A responsive HTML5 website template by HTML5Templates.com
+	Released for free under the Creative Commons Attribution 3.0 license (html5templates.com/license)
+	Visit http://html5templates.com for more great templates or follow us on Twitter @HTML5T
+*/
+
+/*********************************************************************************/
+/* Desktop (>= 480px)                                                            */
+/*********************************************************************************/
+
+
+/* Header Content Wrapper */
+
+#header-wrapper {
+}
+
+#header-wrapper2 {
+	
+}
+
+.homepage #header-wrapper2 {
+}
+
+/* Page Wrapper */
+
+#page-wrapper {
+	overflow: hidden;
+	padding: 50px 0px;
+	background-color: #FFFFFF;
+}
+
+#page-wrapper h2 {
+	padding: 0px 0px 30px 0px;
+}
+
+#page-wrapper a img {
+}
+
+/* Footer Content Wrapper */
+
+#footer-wrapper {
+}
+
+/* Header */
+
+#header {
+}
+
+/* Logo */
+
+#logo {
+	overflow: hidden;
+	height: 60px;
+	padding-top: 50px;
+}
+
+#logo h1 a {
+	float: left;
+	text-decoration: none;
+	text-shadow: 1px 1px 0px #38800E;
+	text-transform: lowercase;
+	font-family: 'Lobster', cursive;
+	font-size: 54pt;
+	font-weight: 200;
+	color: #FFFFFF;
+}
+
+#logo p {
+	float: left;
+	padding-left: 10px;
+	letter-spacing: -2px;
+	font-family: 'Magra', sans-serif;
+	font-size: 20pt;
+	font-weight: 200;
+	color: #FFFFFF;
+}
+
+#logosocial{
+	overflow: hidden;
+	height: 60px;
+	padding-top: 50px;
+	float: right;
+}
+
+/* Menu */
+
+#menu {
+	overflow: hidden;
+	height: 49px;
+	margin-bottom: 20px;
+
+	background: url(footer-wrapper-bg.jpg) repeat;
+	background-color: #00EE00;
+}
+
+#menu li {
+	float: left;
+	background: url(smenu-divider-bg.png) no-repeat right top;
+}
+
+#menu a {
+	display: block;
+	float: left;
+	margin-right: 2px;
+	padding: 0px 20px;
+	line-height: 49px;
+	text-decoration: none;
+	font-size: 11pt;
+	color: #000;
+}
+
+#menu a:hover {
+	display: inline-block;
+	outline: 0;
+	white-space: nowrap;
+  
+	padding: 0px 30px 0px 30px;
+	background: #277700;
+	box-shadow: inset 0px 0px 0px 1px #83C862, 0px 2px 3px 0px rgba(0,0,0,0.25);
+	
+	border-radius: 5px;
+	background-image: -moz-linear-gradient(top, #00FF00, #328B06);
+	background-image: -webkit-linear-gradient(top, #40AA0E, #328B06);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#40AA0E), to(#328B06));
+	background-image: -ms-linear-gradient(top, #40AA0E, #328B06);
+	background-image: -o-linear-gradient(top, #40AA0E, #328B06);
+	background-image: linear-gradient(top, #40AA0E, #328B06);
+	text-decoration: none;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+	font-size: 11pt;
+	color: #FFFFFF;
+}
+
+/* Banner Content */
+
+#banner {
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: 20px;
+	background-color: rgba(0,0,0,.1);
+}
+
+#banner a img {
+	width: 100%;
+	display: block;
+	text-decoration: none;
+
+
+}
+
+/* Splash Content */
+
+#splash {
+	overflow: hidden;
+	padding: 0px 0px 30px 0px;
+	letter-spacing: -3px;
+	line-height: 110%;
+	text-align: center;
+	font-family: 'Magra', sans-serif;
+	font-weight: 300;
+	font-size: 48px;
+	color: #696969
+}
+
+#splash span {
+	color: #000000;
+}
+
+/* Footer Content */
+
+#footer-content {
+}
+
+#footer-content h2 {
+}
+
+#footer-content .margin-bottom {
+	padding-bottom: 20px;
+}
+
+/* Copyright */
+
+#copyright {
+	overflow: hidden;
+	height: 200px;
+	text-align: center;
+	font-size: 10pt;
+	color: #555;
+	padding: 2em;
+}
+
+#copyright p {
+	padding: 40px 0px 0px 0px;
+	text-align: center;
+}
+
+#copyright a {
+	color: #555;
+}

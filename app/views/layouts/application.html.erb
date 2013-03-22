@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+  <title>Notebooktech - Especialista em Notebooks</title>
+ <%= stylesheet_link_tag  "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+
+  <script type="text/javascript">
+$(document).ready(function () {
+    $("#slider").easySlider({
+        auto: true,
+        continuous: true,
+        numeric: true,
+        speed: 1200,
+        pause: 5000 // change slide interval speed here
+    });
+});
+</script>
+
+</head>
+<body class="homepage">
+  <!--bloco render header-->
+<div id="header-wrapper">
+ <%= render 'layouts/header' %>
+
+</div>
+ <!--bloco render header-->
+<!--conteudo dimanico-->
+<div id="page-wrapper">
+
+
+ <%= yield %>
+
+
+</div>
+<!--conteudo dimanico-->
+<!--conteudo footer-->
+<div id="footer-wrapper">
+ <%= render 'layouts/footer' %>
+</div>
+<!--conteudo footer-->
+<div class="5grid-layout">
+  <div id="copyright">
+    <p>&copy; Your Site Name | Images: <a href="http://erloncarlos.com/" target="_blank">Layout</a> | Design: <a href="http://erloncarlos.com/" target="_blank">Erlon Carlos</a></p>
+  </div>
+</div>
+</body>
+
+</html>

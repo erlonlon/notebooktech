@@ -1,0 +1,27 @@
+/*
+HTML 5 Template Name: Prosperous
+File: Slider CSS
+Author: OS Templates
+Author URI: http://www.os-templates.com/
+Licence: <a href="http://www.os-templates.com/template-terms">Website Template Licence</a>
+*/
+
+#featured_slide{position:relative; display:block; width:100%; overflow:hidden;}
+#featured_slide ul, #featured_slide li, #featured_slide h2, #featured_slide p{margin:0; padding:0; list-style:none;}
+#featured_slide #slider{width:1155px; height:300px; overflow:auto;}
+#featured_slide a{color:#00CD00; background-color:transparent;}
+#featured_slide #slider ul li{width:1155px; height:300px; overflow:hidden; color:#979797; background-color:#EFEFEF;}
+#featured_slide #slider ul li figure{}
+#featured_slide #slider ul li figure img{display:block; float:right; width:710px; height:300px;}
+#featured_slide #slider ul li figure figcaption{display:block; float:left; width:370px; height:280px; padding:35px; overflow:auto;}
+#featured_slide #slider ul li figure figcaption h2{font-size:30px; margin-bottom:20px;
+                                                    font-weight:normal; 
+                                                    font-style:italic;
+                                                     text-transform:none;
+                                                     padding: 05px;}
+#featured_slide #slider ul li figure figcaption p{line-height:1.6em;}
+#featured_slide #slider ul li figure figcaption .more{margin-top:10px; line-height:normal;}
+
+#featured_slide ol#fs_navi{display:block; position:absolute; right:15px; bottom:0; height:28px; margin:0; padding:0; overflow:hidden; list-style:none;}
+#featured_slide ol#fs_navi li{float:left; width:auto; height:auto; margin:0 0 0 10px; padding:0;}
+#featured_slide ol#fs_navi li.current a{color:#06213F; background:transparent;}

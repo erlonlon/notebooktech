@@ -4,24 +4,34 @@
       <div class="row">
         <div class="4u">
           <section>
-            <p><a href="#"> <%= image_tag 'pics02.jpg' %></a></p>
+            <p><a href="#"> <%= image_tag 'banner_notebook.png' %></a></p>
             <p>Consertamos notebooks, utilizando peças de qualidade e marcas de renome. Além de fazer com que o notebook volte a funcionar pela substituição de alguma peça defeituosa, também realizamos a configuração correta do hardwarer e do Sistema Operacional, para melhorar o desempenho de seu equipamento.
 </p>
-            <p><a href="#" class="button">Leia Mais</a></p>
+             <p><%= link_to services_path ,:class => "button" do %>
+          Leia mais
+             <% end %>
+        </p>
           </section>
         </div>
+       
         <div class="4u">
           <section>
-            <p><a href="#"><%= image_tag 'pics01.jpg' %></a></p>
-            <p>Instalamos programas, aplicativos e jogos em seu computador. Configuramos o seu software para que funcione perfeitamente, fazendo com que o programa em questão seja executado de maneira rápida e estável.</p>
-            <p><a href="#" class="button">Leia Mais</a></p>
-          </section>
-        </div>
-        <div class="4u">
-          <section>
-            <p><a href="#"><%= image_tag 'pics03.jpg' %></a></p>
+            <p><a href="#"><%= image_tag 'banner_hds.png' %></a></p>
             <p>Recuperação de hds todas as marcas estamos capacitados tecnologicamente para recuperar dados de todas as marcas e modelos de HD estragado. Recuperar Hard Disks com vários sintomas também é um serviço oferecido pelo nosso laboratório de recuperação de dados em HD:</p>
-            <p><a href="#" class="button">Leia Mais</a></p>
+            <p><%= link_to services_path ,:class => "button" do %>
+          Leia mais
+             <% end %>
+        </p>
+          </section>
+        </div>
+         <div class="4u">
+          <section>
+            <p><a href="#"><%= image_tag 'banner_programas.png' %></a></p>
+            <p>Instalamos programas, aplicativos comerciais, aplicativos mobile e jogos em seu computador, notebook ou dispositivos moveis. Configuramos o seu software para que funcione perfeitamente, fazendo com que o programa em questão seja executado de maneira rápida e estável.</p>
+           <p><%= link_to services_path ,:class => "button" do %>
+          Leia mais
+             <% end %>
+        </p>
           </section>
         </div>
       </div>

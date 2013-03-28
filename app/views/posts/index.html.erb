@@ -1,0 +1,52 @@
+
+<div class="12u">
+<div class="5grid-layout">
+<div class="row">
+<div class="8u">
+<section>
+<h2>Últimos Posts do Blog</h2>
+
+
+<% @posts.each do |post| %>
+  
+    <label><%= post.title %></label>
+  
+    <%= link_to 'Show', post %>
+    
+  
+<% end %>
+
+
+<br />
+
+
+</section>
+</div>
+<div class="4u">
+<section>
+<h2>Contatos</h2>
+<ul class="list-style1">
+<li class="first">
+<p>Endereço: Avenida Olímpica, 2329 A</p>
+<p>Cacimba do Povo, Aracati-CE</p>
+<p>CEP: 62800-000</p>
+<p>Fone:(88) 96524411 / 34213181</p>
+<p>E-mail: <a href="mailto:suporte@notebooktech.com.br">suporte@notebooktech.com.br</a> </p>
+</li>
+<li><%= link_to services_path do %>
+    <%= image_tag 'banner_computador.png' %>
+<% end %>
+</li>
+<li><%= link_to services_path do %>
+    <%= image_tag 'banner_programas.png' %>
+    <% end %>
+
+</li>
+
+</ul>
+</section>
+</div>
+</div>
+</div>
+
+

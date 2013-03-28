@@ -1,0 +1,96 @@
+<div class="12u">
+<div class="5grid-layout">
+<div class="row">
+<div class="8u">
+<section>
+
+	<% if notice.present? %>
+<p id="notice" class="show"><%= notice %></p>
+<% end %>
+
+<%= form_for(@contact) do |f| %>
+<% if @contact.errors.any? %>
+<div id="error_explanation">
+<h2><%= pluralize(@contact.errors.count, " error") %> Não foi possível enviar o contato ! veja qual foi o error: </h2>
+
+<ul>
+<% @contact.errors.full_messages.each do |msg| %>
+<li class="alert_error"><%= msg %></li>
+<% end %>
+</ul>
+</div>
+<% end %>
+
+
+<h2>
+
+Entre em contato com a nossa empresa deixe aqui suas dúvidas sugestóes ou reclamações.</h2>
+
+<fieldset>
+<label>Nome</label>
+<%= f.text_field :name %>
+
+</fieldset>
+<fieldset>
+<label>E-Mail</label>
+<%= f.text_field :email %>
+</fieldset>
+<fieldset>
+<label>Fone</label>
+<%= f.text_field :fone %>
+
+</fieldset>
+<fieldset>
+
+<label>Assunto</label>
+<%= f.text_field :assunto %>
+
+</fieldset>
+<fieldset>
+<%= f.text_area :body %>
+
+</fieldset>
+ <p><%= f.captcha %></p>
+ 
+
+
+
+<p>
+<%= f.submit "Enviar contato",:class => "button" %>
+<%= link_to root_path , :class => "button" do %>
+Cancelar
+<% end %>
+</p>
+<% end %>
+
+
+</section>
+</div>
+<div class="4u">
+<section>
+<h2>Contatos</h2>
+<ul class="list-style1">
+<li class="first">
+<p>Endereço: Avenida Olímpica, 2329 A</p>
+<p>Cacimba do Povo, Aracati-CE</p>
+<p>CEP: 62800-000</p>
+<p>Fone:(88) 96524411 / 34213181</p>
+<p>E-mail: <a href="mailto:suporte@notebooktech.com.br">suporte@notebooktech.com.br</a> </p>
+</li>
+<li><%= link_to services_path do %>
+	<%= image_tag 'banner_notebook.png' %>
+<% end %>
+</li>
+<li><%= link_to services_path do %>
+	<%= image_tag 'banner_pecas.png' %>
+	<% end %>
+
+</li>
+
+</ul>
+</section>
+</div>
+</div>
+</div>
+
+

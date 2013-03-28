@@ -1,0 +1,66 @@
+        
+             
+        
+        <article class="module width_3_quarter">
+        <header>
+            <h3 class="tabs_involved">Contatos do Site</h3>
+       
+        </header>
+
+        <div class="tab_container">
+            <div id="tab1" class="tab_content">
+
+            <table class="tablesorter" cellspacing="0"> 
+            <thead> 
+                <tr> 
+                   
+                    <th>Entry Name</th> 
+                    <th>Category</th> 
+                    <th>Created On</th> 
+                    <th>Actions</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                <% @contacts.each do |c| %>
+                <tr> 
+                  
+                    <td><%= c.name %></td> 
+                    <td><%= c.email %></td> 
+                    <td><%= c.assunto %></td> 
+                    <td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+                </tr> 
+               <% end %>
+               
+              
+            </tbody> 
+            </table>
+            </div><!-- end of #tab1 -->
+            
+        
+            
+        </div><!-- end of .tab_container -->
+        
+        </article><!-- end of content manager article -->
+        
+        <article class="module width_quarter">
+            <header><h3>Messages</h3></header>
+            <div class="message_list">
+                <div class="module_content">
+                   
+                    <div class="message"><p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor.</p>
+                    <p><strong>John Doe</strong></p></div>
+                   
+                </div>
+            </div>
+            <footer>
+                <form class="post_message">
+                    <input type="text" value="Message" onfocus="if(!this._haschanged){this.value=''};this._haschanged=true;">
+                    <input type="submit" class="btn_post_message" value=""/>
+                </form>
+            </footer>
+        </article><!-- end of messages article -->
+        
+        <div class="clear"></div>        
+        
+        </article><!-- end of styles article -->
+       

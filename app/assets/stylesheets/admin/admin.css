@@ -603,9 +603,10 @@ cursor: pointer;
 
 input[type=submit]:hover {
 color: #333333;
+text-decoration: none;
 }
 
-input[type=submit].alt_btn {
+input[type=submit] {
 background: #D0D1D4 url(btn_submit_2.png) repeat-x;
 border: 1px solid#30B0C8;
 -webkit-box-shadow: 0 1px 0 #fff;
@@ -624,6 +625,7 @@ cursor: pointer;
 
 input[type=submit].alt_btn:hover {
 color: #001217;
+text-decoration: none;
 }
 
 input[type=submit].btn_post_message {
@@ -639,6 +641,46 @@ text-indent: -5000px;
 input[type=submit].btn_post_message:hover {
 background-position: 0 -24px;
 }
+
+.botaocancelar {
+
+background: #D0D1D4 url(btn_submit.png) repeat-x;
+border: 1px solid #A8A9A8;
+-webkit-box-shadow: 0 1px 0 #fff;
+-moz-box-shadow: 0 1px 0 #fff;
+box-shadow: 0 1px 0 #fff;
+font-weight: bold;
+height: 22px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding: 0 10px;
+color: #666;
+text-shadow: 0 1px 0 #fff;
+cursor: pointer;
+
+}
+.botaocancelar:hover{
+
+background: #D0D1D4 url(btn_submit.png) repeat-x;
+border: 1px solid #A8A9A8;
+-webkit-box-shadow: 0 1px 0 #fff;
+-moz-box-shadow: 0 1px 0 #fff;
+box-shadow: 0 1px 0 #fff;
+font-weight: bold;
+height: 22px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+padding: 0 10px;
+color: #CD0000;
+text-shadow: 0 1px 0 #fff;
+cursor: pointer;
+text-decoration: none;
+
+}
+
+
 
 .post_message {
 text-align: left;
@@ -676,7 +718,7 @@ float: left;
 }
 
 .message_list {
-height: 250px;
+height: 560px;
 overflow-x:hidden;
 overflow-y: scroll;
 }
@@ -756,6 +798,7 @@ margin: 0 0.5%;
 display: block;
 float: left;
 width: 96%;
+height: 75px;
 margin: 0 10px;
 }
 

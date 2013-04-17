@@ -1,31 +1,56 @@
-<h1>Listing posts</h1>
+        <article class="module width_3_quarter">
+        <header><h3 class="tabs_involved">LIsagem de artigos publicados</h3>
+        <ul class="tabs">
+            <li><%= link_to new_admin_post_path do %>
+                Novo Artigo <% end %></li>
+          
+        </ul>
+        </header>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Subtitle</th>
-    <th>Autor</th>
-    <th>Url</th>
-    <th>Body</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+        <div class="tab_container">
+            <div id="tab1" class="tab_content">
 
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.title %></td>
-    <td><%= post.subtitle %></td>
-    <td><%= post.autor %></td>
-    <td><%= post.url %></td>
-    <td><%= post.body %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
 
-<br />
+            <table class="tablesorter" cellspacing="0"> 
+            <thead> 
+                <tr> 
+                    <th>Data</th>
+                    <th>Titulo</th> 
+                  
+                  
+                    <th>Ações</th> 
+                </tr> 
+            </thead> 
+            <tbody> 
+                
+             <% @posts.each do |c| %>
+                <tr> 
+                  <td><%= c.created_at.strftime("%d de %b - %y") %></td>
+                    <td><%= c.title %></td> 
+                   
+                  
+                    <td><%= link_to admin_post_path(c) do %>
+                        <%= image_tag "admin/icn_search.png", :title=> "Visualizar" %><% end %>
+                       
+                          <%= link_to edit_admin_post_path(c) do %>
+                        <%= image_tag "admin/icn_edit.png", :title=> "Visualizar" %> <% end %>
+                        <%= link_to admin_post_path(c), confirm: 'Deletar arquivo, Tem certeza ?', method: :delete , :title => "Excluir arquivo"  do %>
+                        <%= image_tag "admin/icn_trash.png" %> <% end %>
+                        
 
-<%= link_to 'New Post', new_post_path %>
+
+                        </td> 
+                </tr> 
+               <% end %>
+                 <tr><td colspan="5"><%= will_paginate @posts %></td></tr>
+            </tbody> 
+            </table>
+            </div><!-- end of #tab1 -->
+            
+            
+            
+        </div><!-- end of .tab_container -->
+        
+        </article><!-- end of content manager article -->
+        
+      <%= render 'admin/posts/imagens' %>

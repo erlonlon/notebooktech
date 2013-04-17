@@ -1,0 +1,66 @@
+<article class="module width_3_quarter">
+<header>
+  <h3 class="tabs_involved">Cadastro de imagens do site</h3>
+</header>
+
+<div class="tab_container">
+<div id="tab1" class="tab_content">
+
+
+ <%= form_for [:admin, @gallery] do |f| %>
+    <% if @gallery.errors.any? %>
+    <div id="error_explanation">
+    <h2><%= pluralize(@gallery.errors.count, "error") %> : Não foi possível salvar o registro no banco:</h2>
+    <% @gallery.errors.full_messages.each do |msg| %>
+    <h4 class="alert_error"><%= msg %></h4>
+    <% end %>
+
+    </div>
+    <% end %>
+
+<fieldset>  
+    <label>Selecione a categoria</label>
+     <%= f.collection_select(:type_id, @types, :id ,:name, :prompt => true ) %> 
+
+    </fieldset>
+      <fieldset>
+      <label>Nome</label>
+      <%= f.text_field :title %>
+      </fieldset>
+      <fieldset>
+      <label>Endereço do site</label>
+      <%= f.text_field :url %>
+      </fieldset>
+      <fieldset>
+       <label>Descrição da imagem</label>
+       <%= f.text_area :body, :rows => "3"  %>
+      </fieldset>
+      <fieldset>
+       <%= f.file_field :foto %>
+      </fieldset>
+    </div>
+    <footer>
+    <div class="submit_link">
+      <%= f.submit 'Salvar registro',:class => 'alt_btn' %>
+    <%= link_to admin_galleries_path, :class =>"botaocancelar" do %>
+    Cancelar <% end %>
+    </div>
+    </footer>
+  <% end %>  
+
+</div><!-- end of #tab1 -->  
+
+</div><!-- end of .tab_container -->
+
+</article><!-- end of content manager article -->
+
+<!-- render menudireito -->
+<%= render  'admin/posts/imagens' %>
+
+<!-- fecha render menudireito -->
+
+<div class="clear"></div> 
+
+
+</article><!-- end of styles article -->
+<div class="spacer"></div>

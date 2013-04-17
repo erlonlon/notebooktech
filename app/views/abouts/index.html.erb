@@ -8,7 +8,7 @@
 
 <h2>Empresa</h2>
 <p>
-A Notebooktech é uma empresa especializada na comercialização de microcomputadores portáteis. Atuando neste mercado, os fundadores decidiram constituir a empresa com o objetivo de oferecer  a máxima qualidade e total segurança em serviços nas áreas pré-venda e pós-venda.<br>
+A Notebooktech é uma empresa especializada na comercialização e manutenção de microcomputadores portáteis. Atuando neste mercado, os fundadores decidiram constituir a empresa com o objetivo de oferecer  a máxima qualidade e total segurança em serviços nas áreas pré-venda e pós-venda.<br>
 Essa meta pode ser traduzida por liderança em tecnologia, trabalho em equipe e produtos de excelente qualidade e confiabilidade.<br>
 Nosso comprometimento com o cliente vai muito além da venda. O consumidor de informática sabe como é importante o suporte quando a gente mais precisa.
 
@@ -35,28 +35,8 @@ Toda linha de acessórios para o seu notebook e equipamentos de informática em 
 </section>
 </div>
 <div class="4u">
-<section>
-<h2>Contatos</h2>
-<ul class="list-style1">
-<li class="first">
-<p>Endereço: Avenida Olímpica, 2329 A</p>
-<p>Cacimba do Povo, Aracati-CE</p>
-<p>CEP: 62800-000</p>
-<p>Fone:(88) 96524411 / 34213181</p>
-<p>E-mail: <a href="mailto:suporte@notebooktech.com.br">suporte@notebooktech.com.br</a> </p>
-</li>
-<li><%= link_to services_path do %>
-	<%= image_tag 'banner_computador.png' %>
-<% end %>
-</li>
-<li><%= link_to services_path do %>
-	<%= image_tag 'banner_programas.png' %>
-	<% end %>
-
-</li>
-
-</ul>
-</section>
+	<%= render 'layouts/sidebar_direito' %>
+</div>
 </div>
 </div>
 </div>

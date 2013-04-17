@@ -1,30 +1,28 @@
-<p id="notice"><%= notice %></p>
+<article class="module width_full">
+<header><h3>Detalhes do registro</h3>
+<ul class="tabs">
+<li>   <%= link_to 'Criar novo registro', new_admin_post_path, :title => "criar novo registro" %></li>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+</ul></header>
+<div class="module_content">
+	<h2><%= @post.title %></h2>
+	<label><%= @post.autor %>,<%= @post.created_at.strftime("%d %b %y ") %></label>
+	<label><%= @post.url %></label>
 
-<p>
-  <b>Subtitle:</b>
-  <%= @post.subtitle %>
-</p>
-
-<p>
-  <b>Autor:</b>
-  <%= @post.autor %>
-</p>
-
-<p>
-  <b>Url:</b>
-  <%= @post.url %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%= @post.body %>
-</p>
+<div><%= textilize @post.subtitle %></div>
+<div><%= textilize @post.body %></div>
 
 
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+
+
+</div>
+<footer>
+<div class="submit_link">
+<%= link_to admin_posts_path, :class =>"botaocancelar" do %>
+Inicio <% end %>
+
+</div>
+</footer>
+</article><!-- end of post new article -->
+
+

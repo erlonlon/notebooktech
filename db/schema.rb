@@ -11,7 +11,13 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130328122311) do
+ActiveRecord::Schema.define(:version => 20130414130040) do
+
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "contacts", :force => true do |t|
     t.string   "name"
@@ -23,12 +29,45 @@ ActiveRecord::Schema.define(:version => 20130328122311) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "galleries", :force => true do |t|
+    t.string   "title"
+    t.string   "url"
+    t.text     "body"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.integer  "type_id"
+    t.string   "foto_file_name"
+    t.string   "foto_content_type"
+    t.integer  "foto_file_size"
+    t.datetime "foto_updated_at"
+  end
+
+  create_table "locations", :force => true do |t|
+    t.string   "endereco"
+    t.string   "bairro"
+    t.string   "cidade"
+    t.string   "cep"
+    t.string   "fone"
+    t.string   "email"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.float    "latitude"
+    t.float    "longitude"
+  end
+
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "subtitle"
     t.string   "autor"
     t.string   "url"
     t.text     "body"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "category_id"
+  end
+
+  create_table "types", :force => true do |t|
+    t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

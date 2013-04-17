@@ -1,0 +1,53 @@
+<article class="module width_3_quarter">
+<header>
+  <h3 class="tabs_involved">Cadastro de categorias de imagens</h3>
+</header>
+
+<div class="tab_container">
+<div id="tab1" class="tab_content">
+
+
+<%= form_for [:admin , @type] do |f| %>
+<% if @type.errors.any? %>
+<div id="error_explanation">
+<h4  class="alert_warning"><%= pluralize(@type.errors.count, "error") %> Problema em salvar registro : </h4>
+
+<ul>
+<% @type.errors.full_messages.each do |msg| %>
+<li>
+<h4 class="alert_error"><%= msg %></h4></li>
+<% end %>
+</ul>
+</div>
+<% end %>
+
+<fieldset>
+<%= f.label :name %><br />
+<%= f.text_field :name %>
+</fieldset>
+
+<div class="submit_link">
+<%= f.submit "Salvar registro", :class =>"alt_btn" %>
+<%= link_to admin_types_path, :class =>"botaocancelar" do %>
+    Cancelar
+<% end %> 
+</div>
+<% end %>
+
+</div><!-- end of #tab1 -->  
+
+</div><!-- end of .tab_container -->
+
+</article><!-- end of content manager article -->
+
+<!-- render menudireito -->
+<%= render  'admin/homes/menudireito' %>
+
+<!-- fecha render menudireito -->
+
+<div class="clear"></div> 
+
+
+</article><!-- end of styles article -->
+<div class="spacer"></div>
+

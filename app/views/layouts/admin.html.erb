@@ -33,9 +33,11 @@
 	</aside><!-- end of sidebar -->
 	
 	<section id="main" class="column">
+		<% if notice.present? %>
 
-				 <p class="notice"><%= notice %></p>
-                <p class="alert"><%= alert %></p>
+				<h4 class="alert_success"><%= notice %></h4>
+              
+                <% end %>
 
                 <%= yield %>
 

@@ -1,11 +1,11 @@
 Notebooktech::Application.routes.draw do
- 
 
- root :to => 'home#index'
+  root :to => 'home#index'
   resources :services
   resources :contacts
   resources :abouts
   resources :posts
+  resources :locations
 
 
     #rotas do devise
@@ -25,6 +25,9 @@ Notebooktech::Application.routes.draw do
       resources :users
       resources :contacts
       resources :posts
+      resources :categories      
+      resources :galleries
+      resources :types
 
     end
 

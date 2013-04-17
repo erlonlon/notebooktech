@@ -4,47 +4,35 @@
 <div class="row">
 <div class="8u">
 <section>
-<h2>Últimos Posts do Blog</h2>
+<h2>Últimos Artigos do Blog</h2>
 
 
 <% @posts.each do |post| %>
+
+  <div class="show"><%= post.created_at.strftime("%y %b %d") %></div>
+    <label class="alert_post"><%= post.title %></label>
+    <label><%= post.subtitle %></label>
   
-    <label><%= post.title %></label>
-  
-    <%= link_to 'Show', post %>
+    
+<%= link_to 'Leia mais',  post, :title => "Leia mais" %><br>
+     
     
   
 <% end %>
 
 
-<br />
 
+<%= will_paginate @posts %>
 
 </section>
 </div>
 <div class="4u">
-<section>
-<h2>Contatos</h2>
-<ul class="list-style1">
-<li class="first">
-<p>Endereço: Avenida Olímpica, 2329 A</p>
-<p>Cacimba do Povo, Aracati-CE</p>
-<p>CEP: 62800-000</p>
-<p>Fone:(88) 96524411 / 34213181</p>
-<p>E-mail: <a href="mailto:suporte@notebooktech.com.br">suporte@notebooktech.com.br</a> </p>
-</li>
-<li><%= link_to services_path do %>
-    <%= image_tag 'banner_computador.png' %>
-<% end %>
-</li>
-<li><%= link_to services_path do %>
-    <%= image_tag 'banner_programas.png' %>
-    <% end %>
 
-</li>
+	<%= render 'layouts/sidebar_direito' %>
 
-</ul>
-</section>
+</div>
+
+
 </div>
 </div>
 </div>

@@ -1,7 +1,4 @@
-        
-             
-        
-        <article class="module width_3_quarter">
+       <article class="module width_3_quarter">
         <header>
             <h3 class="tabs_involved">Contatos do Site</h3>
        
@@ -13,23 +10,24 @@
             <table class="tablesorter" cellspacing="0"> 
             <thead> 
                 <tr> 
-                   
-                    <th>Entry Name</th> 
-                    <th>Category</th> 
-                    <th>Created On</th> 
-                    <th>Actions</th> 
+                   <th>Data</th>
+                    <th>Nome</th> 
+                    <th>E-mail</th> 
+                    <th>Assunto</th> 
+                    <th>Ações</th> 
                 </tr> 
             </thead> 
             <tbody> 
                 <% @contacts.each do |c| %>
                 <tr> 
-                  
+                  <td><%= c.created_at.strftime("%d de %b - %y") %></td>
                     <td><%= c.name %></td> 
                     <td><%= c.email %></td> 
                     <td><%= c.assunto %></td> 
                     <td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
                 </tr> 
                <% end %>
+               <tr><td colspan="5"><%= will_paginate @contacts %></td></tr>
                
               
             </tbody> 

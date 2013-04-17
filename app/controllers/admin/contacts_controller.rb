@@ -1,13 +1,9 @@
 class Admin::ContactsController < Admin::BaseController
-  # GET /contacts
-  # GET /contacts.json
+ 
   def index
-    @contacts = Contact.all
+    @contacts = Contact.paginate page:params[:page], :per_page => 6
 
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @contacts }
-    end
+    respond_with @contacts
   end
 
   # GET /contacts/1

@@ -302,3 +302,18 @@ color: #32510F;
 padding: 10px 0;
 text-indent: 40px;
 font-size: 14px;}
+
+.alert_post {
+display: block;
+width: 95%;
+margin-top: 20px;
+-webkit-border-radius: 3px;
+-moz-border-radius: 3px;
+border-radius: 3px;
+background: #E2F6C5;
+background-position: 10px 10px;
+border: 0px solid #79C20D;
+color: #32510F;
+padding: 05px 0;
+text-indent: 20px;
+font-size: 14px;}

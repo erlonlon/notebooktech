@@ -1,21 +1,66 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+<article class="module width_3_quarter">
+<header>
+  <h3 class="tabs_involved">Cadastro de usuários</h3>
+</header>
 
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<div class="tab_container">
+<div id="tab1" class="tab_content">
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+<%= form_for [:admin , @user] do |f| %>
+<% if @user.errors.any? %>
+<div id="error_explanation">
+<h4  class="alert_warning"><%= pluralize(@user.errors.count, "error") %> Não foi possível salvar o registro : </h4>
+
+<ul>
+<% @user.errors.full_messages.each do |msg| %>
+<li>
+<h4 class="alert_error"><%= msg %></h4></li>
 <% end %>
+</ul>
+</div>
+<% end %>
+
+
+<fieldset>
+<label>Nome</label>
+<%= f.text_field :name %>
+</fieldset>
+<fieldset>
+<label>E-mail</label>
+<%= f.text_field :email %>
+
+</fieldset>
+<fieldset>
+<label>Senha</label>
+<%= f.password_field :password %>
+</fieldset>
+<fieldset>
+<label>Senha Confirmar</label>
+<%= f.password_field :password_confirmation %>
+</fieldset>
+
+
+<div class="submit_link">
+<%= f.submit "Salvar registro", :class =>"alt_btn" %>
+<%= link_to admin_users_path, :class =>"botaocancelar" do %>
+    Cancelar
+<% end %> 
+</div>
+<% end %>
+
+</div><!-- end of #tab1 -->  
+
+</div><!-- end of .tab_container -->
+
+</article><!-- end of content manager article -->
+
+<!-- render menudireito -->
+
+
+<!-- fecha render menudireito -->
+
+<div class="clear"></div> 
+
+
+
+

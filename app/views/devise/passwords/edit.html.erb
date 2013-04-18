@@ -1,4 +1,17 @@
-<h2>Change your password</h2>
+
+
+
+<article class="module width_3_quarter">
+<header>
+  <h3 class="tabs_involved">Change your password</h3>
+</header>
+
+<div class="tab_container">
+<div id="tab1" class="tab_content">
+
+
+
+
 
 <%= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f| %>
   <%= devise_error_messages! %>
@@ -12,3 +25,13 @@
 
   <div><%= f.submit "Change my password" %></div>
 <% end %>
+
+</div><!-- end of #tab1 -->  
+
+</div><!-- end of .tab_container -->
+
+</article><!-- end of content manager article -->
+
+<div class="clear"></div> 
+
+

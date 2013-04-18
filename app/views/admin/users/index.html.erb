@@ -1,23 +1,56 @@
-<h1>Listing users</h1>
+<article class="module width_3_quarter">
+<header><h3 class="tabs_involved">Listagem de usuários</h3>
+<ul class="tabs">
+<li><%= link_to new_admin_user_path do %>
+Novo registro <% end %></li>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+</ul>
+</header>
 
-<% @users.each do |user| %>
-  <tr>
-    <td><%= user.name %></td>
-    <td><%= link_to 'Show', user %></td>
-    <td><%= link_to 'Edit', edit_user_path(user) %></td>
-    <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
+<div class="tab_container">
+<div id="tab1" class="tab_content">
+
+
+<table class="tablesorter" cellspacing="0"> 
+<thead> 
+<tr> 
+  
+<th>Nome</th>
+<th>E-mail</th> 
+
+
+<th>Ações</th> 
+</tr> 
+</thead> 
+<tbody> 
+
+<% @users.each do |c| %>
+<tr> 
+  <td><%= c.name %></td> 
+<td><%= c.email %></td>
+
+
+
+<td>
+<%= link_to edit_admin_user_path(c) do %>
+<%= image_tag "admin/icn_edit.png", :title=> "Visualizar" %> <% end %>
+<%= link_to admin_user_path(c), confirm: 'Deletar arquivo, Tem certeza ?', method: :delete , :title => "Excluir arquivo"  do %>
+<%= image_tag "admin/icn_trash.png" %> <% end %>
+
+
+
+</td> 
+</tr> 
 <% end %>
+<tr><td colspan="5"><%= will_paginate @users %></td></tr>
+</tbody> 
 </table>
+</div><!-- end of #tab1 -->
 
-<br />
 
-<%= link_to 'New User', new_user_path %>
+
+</div><!-- end of .tab_container -->
+
+</article><!-- end of content manager article -->
+
+<%= render  'admin/homes/menudireito' %>    

@@ -12,11 +12,9 @@ font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 background: #F8F8F8;
 font-size: 12px;
 }
-
 .clear {
 clear: both;
 }
-
 .spacer {
 height: 20px;
 }
@@ -30,8 +28,7 @@ a:hover {
 text-decoration: underline;
 }
 
-
-/* Header */
+/* Header cabecalho */
 
 header#header {
 height: 55px;

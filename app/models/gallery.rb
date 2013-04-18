@@ -9,7 +9,7 @@ class Gallery < ActiveRecord::Base
   validates_associated :type
 
 
-   has_attached_file :foto, :styles => { :small => "710x300#", :medium => "390x165>", :thumb => "110x100>" }
+   has_attached_file :foto, :styles => { :small => "710x300#", :medium => "588x180#", :thumb => "110x100>" }
    validates_attachment_presence :foto
    validates_attachment_size :foto, :less_than => 2.megabyte
    validates_attachment_content_type :foto, :content_type => %w(image/png image/jpeg image/gif)

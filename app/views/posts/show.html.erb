@@ -1,43 +1,28 @@
-
-
-
 <div class="12u">
 <div class="5grid-layout">
 <div class="row">
 <div class="8u">
 <section>
-<h2>Detalhes do Artigo </h2>
+<h2>
 
-
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Title:</b>
   <%= @post.title %>
+</h2>
+<div class="show"><%= @post.created_at.strftime("%y %b %d") %></div>
+ <label class="alert_post">Postado por - <%= @post.autor %></label>
+<p>
+ 
+  <%= textilize @post.subtitle %>
 </p>
+
+<p><a href="<%=  @post.url %>" target="_blank" title="Visite o site"><%=  @post.url %></a> </p>
 
 <p>
-  <b>Subtitle:</b>
-  <%= @post.subtitle %>
-</p>
-
-<p>
-  <b>Autor:</b>
-  <%= @post.autor %>
-</p>
-
-<p>
-  <b>Url:</b>
-  <%= @post.url %>
-</p>
-
-<p>
-  <b>Body:</b>
-  <%= @post.body %>
+ 
+  <%= textilize @post.body %>
 </p>
 
 
-<%= link_to 'Back', posts_path %>
+<%= link_to 'Voltar', posts_path %>
 
 </section>
 </div>

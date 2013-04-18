@@ -9,18 +9,12 @@
 
 <% @posts.each do |post| %>
 
-  <div class="show"><%= post.created_at.strftime("%y %b %d") %></div>
-    <label class="alert_post"><%= post.title %></label>
-    <label><%= post.subtitle %></label>
-  
-    
+<div class="show"><%= post.created_at.strftime("%y %b %d") %> -  <%= post.autor %></div>
+<label class="alert_post"><%= post.title %></label>
+<label><%= textilize post.subtitle %></label><br>    
 <%= link_to 'Leia mais',  post, :title => "Leia mais" %><br>
-     
-    
-  
+
 <% end %>
-
-
 
 <%= will_paginate @posts %>
 
@@ -28,7 +22,7 @@
 </div>
 <div class="4u">
 
-	<%= render 'layouts/sidebar_direito' %>
+<%= render 'layouts/sidebar_direito' %>
 
 </div>
 

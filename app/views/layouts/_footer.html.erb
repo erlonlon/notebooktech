@@ -1,21 +1,21 @@
- <div id="footer-content" class="5grid-layout">
-    <div class="row">
-      <div class="3u">
-        <h2>Publicidade</h2>
-        <ul class="list-style1">
-          <li class="first">
+<div id="footer-content" class="5grid-layout">
+<div class="row">
+<div class="3u">
+<h2>Publicidade</h2>
+<ul class="list-style1">
+<li class="first">
 
-           <script type="text/javascript">
-  bb_bid = "1680108";
-  bb_lang = "pt-BR";
-  bb_name = "custom";
-  bb_limit = "4";
-  bb_format = "bbm";
+<script type="text/javascript">
+bb_bid = "1680108";
+bb_lang = "pt-BR";
+bb_name = "custom";
+bb_limit = "4";
+bb_format = "bbm";
 </script>
 <script type="text/javascript" src="http://static.boo-box.com/javascripts/embed.js"></script>
-          </li>
-          <li>
-          <script type="text/javascript"><!--
+</li>
+<li>
+<script type="text/javascript"><!--
 google_ad_client = "ca-pub-9829104402949830";
 /* erloncarlos */
 google_ad_slot = "3787141286";
@@ -26,35 +26,39 @@ google_ad_height = 250;
 <script type="text/javascript"
 src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
-          </li>
-        </ul>
-      </div>
-      <div class="3u">
-        <h2>Redes Sociais</h2>
-        <ul class="list-style1">
-          <li class="first">
+</li>
+</ul>
+</div>
+<div class="3u">
+<h2>Redes Sociais</h2>
+<ul class="list-style1">
+    <li class="first">
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/pt_BR/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
-<div class="fb-like-box" data-href="https://www.facebook.com/erlonloja" data-width="290" data-height="535" data-show-faces="true" data-stream="true" data-header="false"></div>
-          </li>
-         
-        </ul>
-      </div>
-      <div class="6u">
+    <div class="fb-like-box" data-href="https://www.facebook.com/erlonloja" data-width="290" data-height="535" data-show-faces="true" data-stream="true" data-header="false"></div>
+    </li>
 
+</ul>
+</div>
+<div class="6u">
 
-        <h2>Destaque Notícias do Blog</h2>
-        <p class="margin-bottom"><%= image_tag "pics11.png" %></p>
-        <p>Welcome to<strong> Elemental</strong>, a free responsive HTML5 website template designed by <a href="http://html5templates.com/">HTML5Templates.com</a>.   It features a neat and clean color combination, a spacious content area, and a large banner area, making it a great design for a corporate/portfolio type of website.  And like all of our templates, it is built on HTML5 and CSS3, has full responsive support for desktops, tablets, and mobile devices, and is 100% free to use personally or commercially under the <a href="http://html5templates.com/license/">Creative Commons license</a>. Be sure to check out our <a href="http://html5templates.com/">website</a> for more awesome free HTML5 templates and follow us on <a href="http://twitter.com/HTML5T">Twitter</a> for updates and new releases! Enjoy!</p>
-        <p><a href="#" class="button">Leia Mais</a></p>
-      </div>
-    </div>
-  </div>
+<h2>Destaque Notícias do Blog</h2>
+    <% @postssite.each do |c| %>
+    <p >
+    <%= textilize c.subtitle %>
+    </p>
+
+    <p><%= link_to 'Leia mais',  post_path(c), :title => "Leia mais" %>
+    </p>
+    <% end %>
+</div>
+</div>
+</div>

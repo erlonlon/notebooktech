@@ -6,7 +6,7 @@
 <div id=".media">
 <div class="media">
 <%- @galleries.each do |g| -%>
-<%= link_to image_tag(g.foto.url(:thumb)) , g.foto.url(:small), :target => "_blank"  %>
+<%= link_to image_tag(g.foto.url(:thumb)) , g.foto.url(:medium), :target => "_blank"  %>
 <%- end -%>
 </div>
 </div>

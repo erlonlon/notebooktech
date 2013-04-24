@@ -326,3 +326,25 @@ background: #ffffff;
 padding: 05px 0;
 text-indent: 20px;
 font-size: 14px;}
+
+.preco {
+	display: inline-block;
+	outline: 0;
+	white-space: nowrap;
+	margin-top: 20px;
+	padding: 0px 05px 0px 05px;
+	background: #277700;
+	box-shadow: inset 0px 0px 0px 1px #83C862, 0px 2px 3px 0px rgba(0,0,0,0.25);
+	border: solid 1px #277700;
+	border-radius: 4px;
+	background-image: -moz-linear-gradient(top, #00FF00, #328B06);
+	background-image: -webkit-linear-gradient(top, #40AA0E, #328B06);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#40AA0E), to(#328B06));
+	background-image: -ms-linear-gradient(top, #40AA0E, #328B06);
+	background-image: -o-linear-gradient(top, #40AA0E, #328B06);
+	background-image: linear-gradient(top, #40AA0E, #328B06);
+	text-decoration: none;
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.5);
+	font-size: 12pt;
+	color: #FFFFFF;
+}

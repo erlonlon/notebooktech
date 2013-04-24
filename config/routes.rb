@@ -1,11 +1,14 @@
 Notebooktech::Application.routes.draw do
 
+ 
+
   root :to => 'home#index'
   resources :services
   resources :contacts
   resources :abouts
   resources :posts
   resources :locations
+  resources :tables
 
 
     #rotas do devise

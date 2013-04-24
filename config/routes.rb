@@ -1,7 +1,5 @@
 Notebooktech::Application.routes.draw do
 
- 
-
   root :to => 'home#index'
   resources :services
   resources :contacts
@@ -9,7 +7,6 @@ Notebooktech::Application.routes.draw do
   resources :posts
   resources :locations
   resources :tables
-
 
     #rotas do devise
 	scope '/admin' do
@@ -33,6 +30,5 @@ Notebooktech::Application.routes.draw do
       resources :types
 
     end
-
   
 end

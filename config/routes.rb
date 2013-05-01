@@ -1,12 +1,15 @@
 Notebooktech::Application.routes.draw do
+ 
 
   root :to => 'home#index'
   resources :services
   resources :contacts
-  resources :abouts
+  resources :abouts, :only => [:index]
   resources :posts
   resources :locations
   resources :tables
+  resources :images, :only => [:index]
+  resources :galleries
 
     #rotas do devise
 	scope '/admin' do

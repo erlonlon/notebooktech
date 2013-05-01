@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ 
  *= require core
  *= require core-desktop
  *= require core-1200px
@@ -17,5 +18,11 @@
  *= require style-desktop
  *= require style-1000px
  *= require slider
+ *= require lightbox
+ 
+ 
+ 
+
+ 
  */
 

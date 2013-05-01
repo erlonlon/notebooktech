@@ -2,7 +2,7 @@ class Admin::GalleriesController < Admin::BaseController
   
   before_filter :controle_extra
   def index
-    @galleries = Gallery.paginate page: params[:page], :per_page => 5
+    @galleries = Gallery.paginate page: params[:page], :per_page => 8
     respond_with @galleries
   end
 

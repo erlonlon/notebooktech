@@ -1,4 +1,4 @@
-/*
+ /*
 	Elemental: A responsive HTML5 website template by HTML5Templates.com
 	Released for free under the Creative Commons Attribution 3.0 license (html5templates.com/license)
 	Visit http://html5templates.com for more great templates or follow us on Twitter @HTML5T
@@ -28,13 +28,26 @@
 	padding: 50px 0px;
 	background-color: #FFFFFF;
 }
-
+#page-wrapper-imagens {
+	overflow: hidden;
+	padding: 50px 0px;
+	background-color: #FFFFFF;
+}
 #page-wrapper h2 {
 	padding: 0px 0px 30px 0px;
 }
 
-#page-wrapper a img {
+#page-wrapper-imagens h2 {
+	padding: 0px 0px 30px 0px;
 }
+
+#page-wrapper  {
+	
+}
+#page-wrapper-imagens  {
+	
+}
+
 
 /* Footer Content Wrapper */
 

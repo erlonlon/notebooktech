@@ -55,10 +55,11 @@ strong {
 }
 
 #page-wrapper a img {
-	width: 100%;
+	width: 95%;
 	display: block;
-	margin-bottom: 30px;
+	margin-bottom: 0px;
 }
+
 
 /* Footer Content Wrapper */
 

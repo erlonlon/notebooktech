@@ -1,0 +1,23 @@
+<div class="12u">
+<div class="5grid-layout">
+<div class="row">
+<% @imagens_erlon.galleries.each do |g| %>
+    <div class="4u">
+      <section>
+      <h3> <%= g.title %> </h3>
+       <a href="<%= image_path g.foto.url(:small) %>" rel="lightbox[roadtrip]" title="<%= g.title %> " > 
+      <%= image_tag g.foto.url %>
+      </p>
+
+      </section>
+    </div>
+<% end %>
+
+
+</div>
+<%= will_paginate @galleries %>
+</div>
+</div>
+
+
+

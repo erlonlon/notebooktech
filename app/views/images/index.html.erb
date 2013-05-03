@@ -1,7 +1,7 @@
 <div class="12u">
 <div class="5grid-layout">
 <div class="row">
-<% @imagens_erlon.galleries.each do |g| %>
+<% @imagens_erlon.galleries.limit(5).each do |g| %>
     <div class="4u">
       <section>
       <h3> <%= g.title %> </h3>

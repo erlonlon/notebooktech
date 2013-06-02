@@ -4,7 +4,7 @@ before_filter :controle_extra
 
 
   def index
-  	 @galleries = Gallery.paginate page: params[:page], :per_page =>5
+  	 @galleries = Gallery.paginate page: params[:page], :per_page =>12
      respond_with @gallery
   end
 

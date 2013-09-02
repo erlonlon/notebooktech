@@ -33,8 +33,9 @@
                     <td><%= c.name %></td> 
                     <td><%= c.email %></td> 
                     <td><%= c.assunto %></td> 
-                    <td><%= image_tag "admin/icn_search.png", :title=> "Visualizar" %>
-                    	<%= image_tag "admin/icn_jump_back.png" ,:title => "Enviar email"%>
+                    <td>
+                    	 <%= link_to admin_contact_path(c) do %>
+                        <%= image_tag "admin/icn_search.png", :title=> "Visualizar" %><% end %>
                     	</td> 
                 </tr> 
                <% end %>

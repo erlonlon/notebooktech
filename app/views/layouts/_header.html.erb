@@ -1,121 +1,176 @@
- <div id="header-wrapper2">
-    <header id="header" class="5grid-layout">
-      <div class="row">
-        <div class="12u" id="logo"> <!-- Logo -->
-          <%= link_to root_path ,:class => "mobileUI-site-name" do %><%= image_tag "logonotebooktech_700_200.png", :size => "300x85" %><% end %>
-            <div id="logosocial"> <!-- Logo -->
+<div id="header-wrapper2">
+<header id="header" class="5grid-layout">
+<div class="row">
+<div class="12u" id="logo"> <!-- Logo -->
+<%= link_to root_path ,:class => "mobileUI-site-name" do %><%= image_tag "logonotebooktech_700_200.png", :size => "300x85" %><% end %>
+<div id="logosocial"> <!-- Logo -->
 
-               <a href="http://www.linkedin.com/pub/erlon-carlos-carlos/1a/831/190" target="_blank">  <%= image_tag "linkedin2.png" %></a>
-         
-              
-          <a href="https://www.facebook.com/erlonloja?ref=tn_tnmn" target="_blank"><%= image_tag "facebook.png" %></a>
-          <a href="https://twitter.com/erlonlon" target="_blank">  <%= image_tag "twitter2.png" %></a>
-           <a href="https://plus.google.com/u/0/b/105123295365467962956/" target="_blank">  <%= image_tag "google32.png" %></a>
-           
-        
-        </div>
-        
-        </div>
+<a href="http://www.linkedin.com/pub/erlon-carlos-carlos/1a/831/190" target="_blank">  <%= image_tag "linkedin2.png" %></a>
 
-      </div>
-      <div class="row">
-        <div class="12u" id="menu">
-          <nav class="mobileUI-site-nav">
-            <ul>
-              <li class="current_page_item"><%= link_to root_path do %>
-                Home<% end %></li>
-              <li><%= link_to abouts_path do %>A Empresa<% end %></li>
-              <li><%= link_to posts_path do %>Blog<% end %></li>
-               <li><%= link_to contacts_path do %>Contatos<% end %></li>
-                 <li><%= link_to images_path do %>Fotos<% end %></li>
-             <li><%= link_to locations_path do %>Localização<% end %></li>
-             <li><%= link_to services_path do %>Serviços<% end %></li>
-               <li><%= link_to tables_path do %>Tabela Serviços<% end %></li>
 
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </header>
-    <div class="5grid-layout">
-      <div class="row">
-        <div class="12u">
-          <div id="banner">
-           
- <section id="featured_slide">
-      <!-- ########################################################################################## -->
-      <div id="slider">
-        <ul>
-          <li>
-            <figure> <%= image_tag "banner_notebook.png" %>
-             
-              <figcaption>
-                <h2>Manutenção de Notebooks</h2>
-                <p>Consertamos notebooks, utilizando peças de qualidade e marcas de renome. Além de fazer com que o notebook volte a funcionar pela substituição de alguma peça defeituosa, também realizamos a configuração correta do hardwarer e do Sistema Operacional, para melhorar o desempenho de seu equipamento.
+<a href="https://www.facebook.com/erlonloja?ref=tn_tnmn" target="_blank"><%= image_tag "facebook.png" %></a>
+<a href="https://twitter.com/erlonlon" target="_blank">  <%= image_tag "twitter2.png" %></a>
+<a href="https://plus.google.com/u/0/b/105123295365467962956/" target="_blank">  <%= image_tag "google32.png" %></a>
+
+
+</div>
+
+</div>
+
+</div>
+<div class="row">
+<div class="12u" id="menu">
+<nav class="mobileUI-site-nav">
+<ul>
+<li class="current_page_item"><%= link_to root_path do %>
+Home<% end %></li>
+<li><%= link_to abouts_path do %>A Empresa<% end %></li>
+<li><%= link_to tables_path do %>Automação Comercial<% end %></li>
+<li><%= link_to posts_path do %>Blog<% end %></li>
+<li><%= link_to contacts_path do %>Contatos<% end %></li>
+<li><%= link_to images_path do %>Clientes<% end %></li>
+<li><%= link_to locations_path do %>Localização<% end %></li>
+<li><%= link_to services_path do %>Serviços<% end %></li>
+
+
+</ul>
+</nav>
+</div>
+</div>
+</header>
+<div class="5grid-layout">
+<div class="row">
+<div class="12u">
+<div id="banner">
+
+<section id="featured_slide">
+<!-- ########################################################################################## -->
+<div id="slider">
+<ul>
+   <li>
+    <figure> <%= image_tag "administrador.jpg" %>
+    <figcaption>
+    <h2>Sistema Administrador Geração 4</h2>
+    <p>O melhor sistema para controle físico e financeiro para sua empresa.<br>
+Modulos especificos para:
+    Indústrias, Prestadores de Serviços, Supermercados<br>
+Indústrias: Pequenas indústrias de fabricação em série. Controle de produção e de estoque, com cálculo de mão de obra direta e indireta embutido no custo do produto final, feito diretamente no sistema.
+    </p>
+    <footer class="more"><%= link_to tables_path do %>
+    Leia mais &raquo;<% end %></footer>
+    </figcaption>
+    </figure>
+    </li>
+
+  <li>
+    <figure> <%= image_tag "comercial.jpg" %>
+    <figcaption>
+    <h2>Sistema Comercial Geração 4</h2>
+    <p>Modernidade e eficiência em automação comercial.<br>
+Permite a emissão de cupom fiscal e processar todas as funções pertinentes a essa função, adequadas ao que orienta a legislação ER-PAF-ECF.<br>
+Pode ser utilizado sozinho ou como PDV dos retaguardas Sistema Administrador G4 ou Sistema Gerencial G4.
+    </p>
+    <footer class="more"><%= link_to tables_path do %>
+    Leia mais &raquo;<% end %></footer>
+    </figcaption>
+    </figure>
+    </li>
+
+
+
+    <li>
+    <figure> <%= image_tag "gerencial.jpg" %>
+
+    <figcaption>
+    <h2>Sistema Gerencial Geração 4</h2>
+    <p>O gerente que sua empresa estava esperando.<br>
+
+Atende comércio em geral e modulos especificos, sem custo adicional!<br>
+
+    Restaurantes<br>
+    Restaurantes com dispositivos móveis (MG4)<br>
+    Prestadores de Serviços<br>
+    Oficinas (com Ordem de Serviços)<br>
+    Farmácias
+
+    </p>
+    <footer class="more"><%= link_to tables_path do %>
+    Leia mais &raquo;<% end %></footer>
+    </figcaption>
+    </figure>
+    </li>
+
+
+    <li>
+    <figure> <%= image_tag "banner_notebook.png" %>
+
+    <figcaption>
+    <h2>Manutenção de Notebooks</h2>
+    <p>Consertamos notebooks, utilizando peças de qualidade e marcas de renome. Além de fazer com que o notebook volte a funcionar pela substituição de alguma peça defeituosa, também realizamos a configuração correta do hardwarer e do Sistema Operacional, para melhorar o desempenho de seu equipamento.
+    </p>
+    <footer class="more"><%= link_to services_path do %>
+    Leia mais &raquo;<% end %></footer>
+    </figcaption>
+    </figure>
+    </li>
+<li>
+<figure><%= image_tag "banner_programas.png" %>
+<figcaption>
+<h2>Instalação de Programas</h2>
+<p>Instalamos programas, aplicativos comerciais, aplicativos mobile e jogos em seu computador, notebook ou dispositivos moveis. Configuramos o seu software para que funcione perfeitamente, fazendo com que o programa em questão seja executado de maneira rápida e estável.</p>
+<footer class="more"><%= link_to services_path do %>
+Leia mais &raquo;<% end %></footer>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure><%= image_tag "banner_computador.png" %>
+<figcaption>
+<h2>Manutenção Computadores</h2>
+<p>Consertamos seu computador pessoal ou de sua empresa, utilizando peças de qualidade e marcas de renome. Além de fazer com que o computador volte a funcionar pela substituição de alguma peça defeituosa, também realizamos a configuração correta do hardwarer e do Sistema Operacional, para melhorar o desempenho de seu equipamento.
 </p>
-                <footer class="more"><%= link_to services_path do %>
-                  Leia mais &raquo;<% end %></footer>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure><%= image_tag "banner_programas.png" %>
-              <figcaption>
-                <h2>Instalação de Programas</h2>
-                 <p>Instalamos programas, aplicativos comerciais, aplicativos mobile e jogos em seu computador, notebook ou dispositivos moveis. Configuramos o seu software para que funcione perfeitamente, fazendo com que o programa em questão seja executado de maneira rápida e estável.</p>
-               <footer class="more"><%= link_to services_path do %>
-                  Leia mais &raquo;<% end %></footer>
-              </figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure><%= image_tag "banner_computador.png" %>
-              <figcaption>
-                <h2>Manutenção Computadores</h2>
-               <p>Consertamos seu computador pessoal ou de sua empresa, utilizando peças de qualidade e marcas de renome. Além de fazer com que o computador volte a funcionar pela substituição de alguma peça defeituosa, também realizamos a configuração correta do hardwarer e do Sistema Operacional, para melhorar o desempenho de seu equipamento.
-</p>
-                <footer class="more"><%= link_to services_path do %>
-                  Leia mais &raquo;<% end %></footer>
-              </figcaption>
-            </figure>
-          </li>
-           <li>
-            <figure><%= image_tag "banner_hds.png" %>
-              <figcaption>
-                <h2>Recuperação de Hds</h2>
-                <p>Recuperação de hds todas as marcas estamos capacitados tecnologicamente para recuperar dados de todas as marcas e modelos de HD estragado. Recuperar Hard Disks com vários sintomas também é um serviço oferecido pelo nosso laboratório de recuperação de dados em HD:</p>
-               <footer class="more"><%= link_to services_path do %>
-                  Leia mais &raquo;<% end %></footer>
-              </figcaption>
-            </figure>
-          </li>
-            <li>
-            <figure><%= image_tag "banner_pecas.png" %>
-              <figcaption>
-                <h2>Acessórios e Peças</h2>
-                <p>Recuperação de hds todas as marcas estamos capacitados tecnologicamente para recuperar dados de todas as marcas e modelos de HD estragado. Recuperar Hard Disks com vários sintomas também é um serviço oferecido pelo nosso laboratório de recuperação de dados em HD:</p>
-                <footer class="more"><%= link_to services_path do %>
-                  Leia mais &raquo; <% end %></footer>
-              </figcaption>
-            </figure>
-          </li>
-           <li>
-            <figure><%= image_tag "banner_impressoras.png" %>
-              <figcaption>
-               <h2>Manutenção em Impressoras</h2>
-                <p>Manutenção preventiva, limpeza troca de placas, todos os tipos de acessórios, cartuchos, toners, tudo que a sua impressora precisa para que tenha um bom funcionamento, você vai encontrar aqui.<br> Além de recargas de cartuchos e toners. </p>
-                <footer class="more"><%= link_to services_path do %>
-                  Leia mais &raquo;<% end %></footer>
-              </figcaption>
-            </figure>
-          </li>
-        </ul>
-      </div>
-      <!-- ########################################################################################## -->
-    </section>
+<footer class="more"><%= link_to services_path do %>
+Leia mais &raquo;<% end %></footer>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure><%= image_tag "banner_hds.png" %>
+<figcaption>
+<h2>Recuperação de Hds</h2>
+<p>Recuperação de hds todas as marcas estamos capacitados tecnologicamente para recuperar dados de todas as marcas e modelos de HD estragado. Recuperar Hard Disks com vários sintomas também é um serviço oferecido pelo nosso laboratório de recuperação de dados em HD:</p>
+<footer class="more"><%= link_to services_path do %>
+Leia mais &raquo;<% end %></footer>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure><%= image_tag "banner_pecas.png" %>
+<figcaption>
+<h2>Acessórios e Peças</h2>
+<p>Recuperação de hds todas as marcas estamos capacitados tecnologicamente para recuperar dados de todas as marcas e modelos de HD estragado. Recuperar Hard Disks com vários sintomas também é um serviço oferecido pelo nosso laboratório de recuperação de dados em HD:</p>
+<footer class="more"><%= link_to services_path do %>
+Leia mais &raquo; <% end %></footer>
+</figcaption>
+</figure>
+</li>
+<li>
+<figure><%= image_tag "banner_impressoras.png" %>
+<figcaption>
+<h2>Manutenção em Impressoras</h2>
+<p>Manutenção preventiva, limpeza troca de placas, todos os tipos de acessórios, cartuchos, toners, tudo que a sua impressora precisa para que tenha um bom funcionamento, você vai encontrar aqui.<br> Além de recargas de cartuchos e toners. </p>
+<footer class="more"><%= link_to services_path do %>
+Leia mais &raquo;<% end %></footer>
+</figcaption>
+</figure>
+</li>
+</ul>
+</div>
+<!-- ########################################################################################## -->
+</section>
 
-            </a></div>
-        </div>
-      </div>
-    </div>
-  </div>
+</a></div>
+</div>
+</div>
+</div>
+</div>

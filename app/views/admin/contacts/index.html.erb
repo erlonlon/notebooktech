@@ -24,7 +24,12 @@
                     <td><%= c.name %></td> 
                     <td><%= c.email %></td> 
                     <td><%= c.assunto %></td> 
-                    <td><input type="image" src="images/icn_edit.png" title="Edit"><input type="image" src="images/icn_trash.png" title="Trash"></td> 
+                    <td>
+                        <%= link_to admin_contact_path(c) do %>
+                        <%= image_tag "admin/icn_search.png", :title=> "Visualizar" %><% end %>
+
+
+                        
                 </tr> 
                <% end %>
                <tr><td colspan="5"><%= will_paginate @contacts %></td></tr>
